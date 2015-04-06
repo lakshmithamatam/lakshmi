@@ -4,7 +4,7 @@ It is possible to customize some parts of Exchange services (`ExchangeServiceBas
 
 ## Override hostname verifier for SSL connections
 
-Below example shows how to switch off hostname verification:
+An example below shows how to switch off hostname verification:
 ```java
 public class CustomExchangeService extends ExchangeService {
 
