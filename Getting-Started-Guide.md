@@ -1,6 +1,14 @@
 ## ToC
 * [[Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
 * [[Using ews-java-api over https|Getting-Started-Guide#using-the-ews-java-api-for-https]]
+* [[Create a new Service instance|Getting-Started-Guide#accessing-ews-by-using-the-ews-java-api]]
+  * [[set the url|Getting-Started-Guide#setting-the-url-of-the-service]]
+* [[Redirecting and responding to autodiscover|Getting-Started-Guide#responding-to-autodiscover-redirecting]]
+* [[Items|Getting-Started-Guide#items]]
+  * [[Folders|Getting-Started-Guide#folders]]
+* Binding
+  * [[Binding to an existing item|Getting-Started-Guide#binding-to-an-existing-item]]
+  * [[Binding to an existing Folder|Getting-Started-Guide#binding-to-an-existing-folder]]
 
 ___
 
