@@ -1,1 +1,1 @@
-Copyright &copy; 2015 Microsoft Corporation *-* [MIT License](https://github.com/OfficeDev/ews-java-api/blob/master/license.txt)
+Copyright &copy; 2015 Microsoft Corporation *-* *Project is released under the terms of the* [MIT License](https://github.com/OfficeDev/ews-java-api/blob/master/license.txt)
