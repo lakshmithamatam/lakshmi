@@ -1,7 +1,8 @@
-# Getting Started with the EWS JAVA API
+## ToC
+* [[Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
+* [[Using ews-java-api over https|#using-the-ews-java-api-for-https]]
 
-## Building EWS JAVA API
-[[Wiki: Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
+___
 
 ## Using the EWS JAVA API for https
 
