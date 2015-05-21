@@ -1,6 +1,6 @@
 ## ToC
 * [[Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
-* [[Using ews-java-api over https|#using-the-ews-java-api-for-https]]
+* [[Using ews-java-api over https|Getting-Started-Guide#using-the-ews-java-api-for-https]]
 
 ___
 
