@@ -1,4 +1,5 @@
 **Getting Started**
+* [[Getting-Started-Guide|Getting-Started-Guide]]
 
 **FAQ**
 * [[HowTo: Build ews-java-api|Building-EWS-JAVA-API]]
