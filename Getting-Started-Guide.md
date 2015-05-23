@@ -1,4 +1,4 @@
-## ToC
+## TOC
 * [[Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
 * [[Using ews-java-api over https|Getting-Started-Guide#using-the-ews-java-api-for-https]]
 * [[Create a new Service instance|Getting-Started-Guide#accessing-ews-by-using-the-ews-java-api]]
@@ -9,6 +9,27 @@
 * Binding
   * [[Binding to an existing item|Getting-Started-Guide#binding-to-an-existing-item]]
   * [[Binding to an existing Folder|Getting-Started-Guide#binding-to-an-existing-folder]]
+* [[Sending a Message|Getting-Started-Guide#sending-a-message]]
+* Appointments
+  * [[Recurring Appointments|Getting-Started-Guide#creating-a-recurring-appointment]]
+  * [[Invitation of attendees|Getting-Started-Guide#inviting-attendees-to-the-previously-created-appointment-to-make-it-a-meeting]]
+* [[Delete an item|Getting-Started-Guide#deleting-an-item-of-any-type]]
+* [[Create a Folder|Getting-Started-Guide#creating-a-folder]]
+* [[Searching|Getting-Started-Guide#searching]]
+  * [[List only 10 items|Getting-Started-Guide#list-the-first-10-items-in-the-inbox]]
+  * [[Retrieve all in groups|Getting-Started-Guide#retrieve-all-the-items-in-the-inbox-by-groups-of-50-items]]
+  * [[Find with criteria|Getting-Started-Guide#find-the-first-10-messages-in-the-inbox-that-have-a-subject-that-contains-the-words-ews-or-api-order-by-date-received-and-only-return-the-subject-and-datetimereceived-properties]]
+  * [[Find folders|Getting-Started-Guide#find-all-child-folders-of-the-inbox-folder]]
+* Calendar
+  * [[Get all appointments in range|Getting-Started-Guide#get-all-appointments-between-startdate-and-enddate-in-the-specified-folder-including-recurring-meeting-occurrences]]
+* [[Extended properties|Getting-Started-Guide#extended-properties]]
+* [[Availability Service|Getting-Started-Guide#availability-service]]
+* [[Notifications|Getting-Started-Guide#notifications]]
+  * [[Using pull notifications|Getting-Started-Guide#using-pull-notifications-with-the-ews-java-api]]
+  * [[Subscribe asynchronously|Getting-Started-Guide#subscribetopullnotifications-asynchronously]]
+  * [[Using push notifications|Getting-Started-Guide#using-push-notifications-with-the-ews-java-api]]
+  * [[Subscribe to push|Getting-Started-Guide#beginsubscribetopushnotifications]]
+* [[Tasks|Getting-Started-Guide#task]]
 
 ___
 
