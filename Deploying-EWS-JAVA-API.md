@@ -7,7 +7,7 @@
 
 ### Update pom.xml to new Version
 * edit `pom.xml` change `<version>X.X-SNAPSHOT</version>` to `<version>X.X</version>`
-* **_don't commit / push as this will trigger the travis build_**
+* commit the actual changes (pom.xml) to the local repository **(dont push)**
 
 ### Announce public key (if not already done)
 * Your public key needs to be announced once. To do this you can:
@@ -18,11 +18,14 @@
 * run `mvn clean deploy -Dgpg.passphrase=$GPGPASS`
 
 ### Create a TAG for that Version
-* run `git tag -a ews-java-api-`**x.x**` -m 'Tag: ews-java-api-x.x'`
-* **TODO: find out if there needs to be a commit(no push) of the pom.xml before**
+* run `git tag -a ews-java-api-`**x.x**` -m 'Tag: ews-java-api-x.x'` 
 * if something was wrong delete that tag <br/>`git tag -d ews-java-api-x.x`
 * before pushing make sure there are no other local tags you probably dont want to push <br/>`git tag -l` 
 * push the current tag `git push --tags`
+
+### Revert the commited changes (we dont want them on the central repo)
+* make sure the latest commit was the pom.xml change
+* wipe it: <br/> `git reset --hard HEAD~1`
 
 ### Update gh-pages
 * run `mvn clean site`
