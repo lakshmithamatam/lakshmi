@@ -34,7 +34,7 @@
   * add new files to git `git add . `
   * commit new files <br/> `git commit -m "Release mvn site to [gh-pages]`
 
-> if current Version is ALPHA/Beta you can skip the next steps an goto [[Be social and celebrate :checkered_flag:|]]
+> if current Version is ALPHA/Beta you can skip the next steps an goto [[Be social and celebrate :checkered_flag:|Deploying-EWS-JAVA-API#be-social-and-celebrate-checkered_flag]]
 
 ### Delete actual branch
 * _[Optional]_ maybe development on that actual branch is finished now. If thats true delete that branch _(if not master :wink: )_ <br/> `git push origin --delete <branchName>`
