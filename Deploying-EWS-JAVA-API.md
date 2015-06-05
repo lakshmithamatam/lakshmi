@@ -1,3 +1,5 @@
+> The following steps can only be done by authorized persons
+
 ### Init/Checks
 * Checkout the latest fresh branch from `https://github.com/OfficeDev/ews-java-api` or make sure your local copy contains no further or uncommited changes and is up-to-date (`git pull && git status -s`)
   * if your branch contains local changes wipe them <br/>`git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard`
