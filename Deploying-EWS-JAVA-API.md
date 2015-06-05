@@ -30,9 +30,9 @@
 * checkout a fresh copy of gh-pages or update your local copy<br/>
   `git clone -b gh-pages --single-branch https://github.com/OfficeDev/ews-java-api.git gh-pages && cd gh-pages`
 * copy mvn generated files to gh-pages
-  * `mkdir -m777 -v -p "./docs/release/<version>"`
+  * `mkdir -m777 -v -p "./docs/releases/<version>"`
   * copy all the files to the new dir<br/>
-`cp -Rf "<ews-java-api-repo>/target/site/*"` "./docs/release/<version>"
+`cp -Rf "<ews-java-api-repo>/target/site/*"` "./docs/releases/<version>"
   * add new files to git `git add . `
   * commit new files <br/> `git commit -m "Release mvn site to [gh-pages]`
 
