@@ -36,7 +36,7 @@
   * `mkdir -m777 -v -p "./docs/releases/<version>"`
   * copy all the files to the new dir<br/>
 `cp -Rf "<ews-java-api-repo>/target/site/*"` "./docs/releases/<version>"
-  * add new files to git `git add . `
+  * add new files to git `git add -A`
   * commit new files <br/> `git commit -m "Release mvn site to [gh-pages]`
 
 > if current Version is ALPHA/Beta you can skip the next steps an goto [[Be social and celebrate :checkered_flag:|Deploying-EWS-JAVA-API#be-social-and-celebrate-checkered_flag]]
