@@ -50,6 +50,7 @@
 * edit `pom.xml` change `<version>X.X</version>` to `<version><newVersion>-SNAPSHOT</version>`
 * commit latest changes
 * Push that branch to remote `git push <remote-name> <newBranchName>`
+* **Rerun this step on `master` if the Version on `master` has to be incremented too?**
 
 ### See travis building the new Snapshot Version
 * [travis:builds](https://travis-ci.org/OfficeDev/ews-java-api/builds)
