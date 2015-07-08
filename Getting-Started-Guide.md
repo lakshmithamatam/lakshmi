@@ -1,6 +1,9 @@
 ## TOC
-* [[Building-EWS-JAVA-API|Building-EWS-JAVA-API]]
-* [[Using ews-java-api over https|Getting-Started-Guide#using-the-ews-java-api-for-https]]
+* [[Using the library|Getting-Started-Guide#using-the-library]]
+  * [[Maven|Getting-Started-Guide#maven]]
+  * [[Gradle|Getting-Started-Guide#gradle]]
+  * [[Building from source|Getting-Started-Guide#building-from-source]]
+* [[Using HTTPS|Getting-Started-Guide#using-https]]
 * [[Create a new Service instance|Getting-Started-Guide#accessing-ews-by-using-the-ews-java-api]]
   * [[set the url|Getting-Started-Guide#setting-the-url-of-the-service]]
 * [[Redirecting and responding to autodiscover|Getting-Started-Guide#responding-to-autodiscover-redirecting]]
@@ -33,11 +36,67 @@
 
 ___
 
-## Using the EWS JAVA API for https
+## Using the library
+Prebuilt JARs are available in the Maven Central repository, which are easy to use with your project. Note that currently, no stable version is available yet, only snapshots in the snapshots repository.
+
+### Maven
+If you want to use a snapshot build, add the Maven Central snapshots repository to your project's `pom.xml`. If you want to use a stable build (not available yet), you should skip this step.
+```xml
+<project>
+  <repositories>
+    <repository>
+      <id>sonatype-snapshots</id>
+      <name>Sonatype OSS Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+</project>
+```
+
+And finally, add the dependency to your project's `pom.xml`.
+```xml
+<project>
+  <dependencies>
+    <dependency>
+      <groupId>com.microsoft.ews-java-api</groupId>
+      <artifactId>ews-java-api</artifactId>
+      <version>2.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>
+```
+
+### Gradle
+If you want to use a snapshot build, add the Maven Central snapshots repository to your project's `build.gradle`. If you want to use a stable build (not available yet), you should skip this step.
+```groovy
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+```
+
+And finally, add the dependency to your project's `build.gradle`.
+```groovy
+dependencies {
+    compile 'com.microsoft.ews-java-api:ews-java-api:2.0-SNAPSHOT'
+}
+```
+
+### Building from source
+To build a JAR from the source yourself, please see [[this page|Building-EWS-JAVA-API]].
+
+## Using HTTPS
 
 To make an environment secure, you must be sure that any communication is with "trusted" sites. SSL uses certificates for authentication — these are digitally signed documents that bind the public key to the identity of the private key owner.
 
-For testing the application with https, you don't have to add any additional code because the code is built into the API.
+For testing the application with HTTPS, you don't have to add any additional code because the code is built into the API.
 
 ## Accessing EWS by using the EWS JAVA API
 To access Exchange Web Services (EWS) by using the EWS JAVA API, all you need is an instance of the ExchangeService class, as shown in the following example.
