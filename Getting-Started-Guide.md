@@ -438,7 +438,9 @@ attendees.add(new AttendeeInfo("test@contoso.com"));
 attendees.add(new AttendeeInfo("temp@contoso.com"));
 
 SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
-Date start = formatter.parse("2010/05/18");
+
+//minimum time frame allowed by API is 24 hours
+Date start = formatter.parse("2010/05/18"); 
 Date end = formatter.parse("2010/05/19");
 
 // Call the availability service.
@@ -453,9 +455,9 @@ int attendeeIndex = 0;
 for (AttendeeAvailability attendeeAvailability : results.getAttendeesAvailability()) {
 	System.out.println("Availability for " + attendees.get(attendeeIndex));
 	if (attendeeAvailability.getErrorCode() == ServiceError.NoError) {
-		for (CalendarEvent calendarEvent : ttendeeAvailability.getCalendarEvents()) {
+		for (CalendarEvent calendarEvent : attendeeAvailability.getCalendarEvents()) {
 			System.out.println("Calendar event");
-			System.out.println("  Start time: " + CalendarEvent.getStartTime().toString());
+			System.out.println("  Start time: " + calendarEvent.getStartTime().toString());
 			System.out.println("  End time: " + calendarEvent.getEndTime().toString());
 
 			if (calendarEvent.getDetails() != null)
