@@ -23,10 +23,6 @@
 * before pushing make sure there are no other local tags you probably dont want to push <br/>`git tag -l` 
 * push the current tag `git push --tags`
 
-### Revert the commited changes (we dont want them on the central repo)
-* make sure the latest commit was the pom.xml change
-* wipe it: <br/> `git reset --hard HEAD~1`
-
 ### Update gh-pages
 * run `mvn clean site`
 * navigate to the folder where you store your github repositories
