@@ -15,7 +15,7 @@
   * `gpg --keyserver hkp://pgp.mit.edu --send-keys <public key name>`<br/>_keyname could be: C7FFB27B for instance_
 
 ### Deployment
-* run `mvn clean deploy -Dgpg.passphrase=$GPGPASS`
+* run `mvn clean deploy -P release -Dgpg.passphrase=$GPGPASS`
 
 ### Create a TAG for that Version
 * run `git tag -a ews-java-api-`**x.x**` -m 'Tag: ews-java-api-x.x'` 
