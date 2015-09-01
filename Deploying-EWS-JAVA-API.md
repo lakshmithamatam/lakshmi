@@ -7,7 +7,7 @@
 
 ### Update pom.xml to new Version
 * edit `pom.xml` change `<version>X.X-SNAPSHOT</version>` to `<version>X.X</version>`
-* commit the actual changes (pom.xml) to the local repository **(dont push)**
+* or do it with `mvn versions:set -DnewVersion=X.X.X`
 
 ### Announce public key (if not already done)
 * Your public key needs to be announced once. To do this you can:
