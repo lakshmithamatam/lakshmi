@@ -37,9 +37,6 @@
 
 > if current Version is ALPHA/Beta you can skip the next steps an goto [[Be social and celebrate :checkered_flag:|Deploying-EWS-JAVA-API#be-social-and-celebrate-checkered_flag]]
 
-### Delete actual branch
-* _[Optional]_ maybe development on that actual branch is finished now. If thats true delete that branch _(if not master :wink: )_ <br/> `git push origin --delete <branchName>`
-
 ### New Version / new Branch
 * Think of a new Version regarding the actual roadmap. New Versionnumber should match [Semantic Versioning](http://semver.org/)
 * Create a new branch <br/> `git checkout -b <newBranchName>`
