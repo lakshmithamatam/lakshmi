@@ -12,7 +12,9 @@
 ### Announce public key (if not already done)
 * Your public key needs to be announced once. To do this you can:
   * `gpg --list-keys`
-  * `gpg --keyserver hkp://pgp.mit.edu --send-keys <public key name>`<br/>_keyname could be: C7FFB27B for instance_
+  * `gpg --keyserver hkp://pgp.mit.edu --send-keys <public key name>`
+  * `gpg --keyserver hkp://keys.gnupg.net --send-keys <public key name>` 
+<br /><br/>_keyname could be: C7FFB27B for instance_
 
 ### Deployment
 * run `mvn clean deploy -P release -Dgpg.passphrase=$GPGPASS`
