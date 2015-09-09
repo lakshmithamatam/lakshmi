@@ -17,7 +17,7 @@
 <br /><br/>_keyname could be: C7FFB27B for instance_
 
 ### Deployment
-* run `mvn clean deploy -P release -Dgpg.passphrase=$GPGPASS`
+* run `mvn clean deploy -P release -Dgpg.passphrase=$GPGPASS -Dgpg.keyname=KEYID`
 
 ### Create a TAG for that Version
 * run `git tag -a ews-java-api-`**x.x**` -m 'Tag: ews-java-api-x.x'` 
