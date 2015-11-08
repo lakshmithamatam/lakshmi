@@ -39,53 +39,20 @@ ___
 ## Using the library
 Prebuilt JARs are available in the Maven Central repository, which are easy to use with your project. Note that currently, no stable version is available yet, only snapshots in the snapshots repository.
 
+## Maven / Gradle Integration
+The ews-java-api can be included in your build with the following declarations. Please check [search.maven](http://search.maven.org/#search%7Cga%7C1%7Cg%3Acom.microsoft.ews-java-api) for the latest release version in the repository.
 ### Maven
-If you want to use a snapshot build, add the Maven Central snapshots repository to your project's `pom.xml`. If you want to use a stable build (not available yet), you should skip this step.
 ```xml
-<project>
-  <repositories>
-    <repository>
-      <id>sonatype-snapshots</id>
-      <name>Sonatype OSS Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-</project>
+<dependency>
+	<groupId>com.microsoft.ews-java-api</groupId>
+	<artifactId>ews-java-api</artifactId>
+	<version>2.0</version>
+</dependency>
 ```
-
-And finally, add the dependency to your project's `pom.xml`.
-```xml
-<project>
-  <dependencies>
-    <dependency>
-      <groupId>com.microsoft.ews-java-api</groupId>
-      <artifactId>ews-java-api</artifactId>
-      <version>2.0-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
-</project>
-```
-
 ### Gradle
-If you want to use a snapshot build, add the Maven Central snapshots repository to your project's `build.gradle`. If you want to use a stable build (not available yet), you should skip this step.
-```groovy
-repositories {
-    maven {
-        url 'https://oss.sonatype.org/content/repositories/snapshots/'
-    }
-}
-```
-
-And finally, add the dependency to your project's `build.gradle`.
 ```groovy
 dependencies {
-    compile 'com.microsoft.ews-java-api:ews-java-api:2.0-SNAPSHOT'
+    compile 'com.microsoft.ews-java-api:ews-java-api:2.0'
 }
 ```
 
