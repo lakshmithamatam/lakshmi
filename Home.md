@@ -3,6 +3,7 @@
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/OfficeDev/ews-java-api?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
 
 ### Status
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.microsoft.ews-java-api/ews-java-api/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3Acom.microsoft.ews-java-api)  
 [![Build Status](https://travis-ci.org/OfficeDev/ews-java-api.svg)](https://travis-ci.org/OfficeDev/ews-java-api) [![codecov.io](https://codecov.io/github/OfficeDev/ews-java-api/coverage.svg?branch=master)](https://codecov.io/github/OfficeDev/ews-java-api?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/567a7d52a7c90e003500015d/badge.svg?style=flat)](https://www.versioneye.com/user/projects/567a7d52a7c90e003500015d)
 
