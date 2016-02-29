@@ -37,7 +37,7 @@
 ___
 
 ## Using the library
-Prebuilt JARs are available in the Maven Central repository, which are easy to use with your project. Note that currently, no stable version is available yet, only snapshots in the snapshots repository.
+Prebuilt JARs are available in the Maven Central repository, which are easy to use with your project. 
 
 ## Maven / Gradle Integration
 The ews-java-api can be included in your build with the following declarations. Please check [search.maven](http://search.maven.org/#search%7Cga%7C1%7Cg%3Acom.microsoft.ews-java-api) for the latest release version in the repository.
