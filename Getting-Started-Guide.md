@@ -256,8 +256,11 @@ You can use EWS to list the first 10 items in the user's mailbox. The following 
 public void listFirstTenItems() {
 	ItemView view = new ItemView(10);
 	FindItemsResults<Item> findResults = service.findItems(folder.getId(), view);
-
-	for (Item item : findResults1.getItems()) {
+        
+        //MOOOOOOST IMPORTANT: load messages' properties before
+	service.loadPropertiesForItems(findResults, PropertySet.FirstClassProperties);
+	
+        for (Item item : findResults.getItems()) {
 		// Do something with the item as shown
 		System.out.println("id==========" + item.getId());
 		System.out.println("sub==========" + item.getSubject());
