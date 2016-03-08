@@ -302,7 +302,7 @@ public void findItems() {
 				LogicalOperator.Or, new SearchFilter.ContainsSubstring(ItemSchema.Subject, "EWS"),
 			new SearchFilter.ContainsSubstring(ItemSchema.Subject, "API")), view);
         //MOOOOOOST IMPORTANT: load items properties, before
-        ews.loadPropertiesForItems(findResults, PropertySet.FirstClassProperties);
+        service.loadPropertiesForItems(findResults, PropertySet.FirstClassProperties);
 	System.out.println("Total number of items found: " + findResults.getTotalCount());
 
 	for (Item item : findResults) {
