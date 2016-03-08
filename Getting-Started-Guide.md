@@ -258,7 +258,7 @@ public void listFirstTenItems() {
 	FindItemsResults<Item> findResults = service.findItems(folder.getId(), view);
         
         //MOOOOOOST IMPORTANT: load messages' properties before
-	service.loadPropertiesForItems(findResults, PropertySet.FirstClassProperties);
+        service.loadPropertiesForItems(findResults, PropertySet.FirstClassProperties);
 	
         for (Item item : findResults.getItems()) {
 		// Do something with the item as shown
