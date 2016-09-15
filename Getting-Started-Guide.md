@@ -276,7 +276,7 @@ public void pageThroughEntireInbox() {
 	FindItemsResults<Item> findResults;
 
 	do {
-		findResults = service.FindItems(WellKnownFolderName.Inbox, view);
+		findResults = service.findItems(WellKnownFolderName.Inbox, view);
 
 		for(Item item : findResults.getItems())
 		{
