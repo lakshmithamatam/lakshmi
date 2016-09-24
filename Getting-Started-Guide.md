@@ -33,6 +33,7 @@
   * [[Using push notifications|Getting-Started-Guide#using-push-notifications-with-the-ews-java-api]]
   * [[Subscribe to push|Getting-Started-Guide#beginsubscribetopushnotifications]]
 * [[Tasks|Getting-Started-Guide#task]]
+* [[Common Issues]|Common-Issues]]
 
 ___
 
@@ -1167,6 +1168,6 @@ ChangeCollection<FolderChange> change = getService().endSyncFolderHierarchy(asyn
 assertNotNull(change);
 System.out.println(change.getCount());
 ```
-
-## Exception "PKIX path building failed” and “unable to find valid certification path to requested target"
+## Common Issues
+Exception "PKIX path building failed” and “unable to find valid certification path to requested target"
 This is a common error faced by many developer. The error and the resolution is documented well at [Stackoverflow] (http://stackoverflow.com/questions/21076179/pkix-path-building-failed-and-unable-to-find-valid-certification-path-to-requ)
