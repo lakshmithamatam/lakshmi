@@ -33,7 +33,7 @@
   * [[Using push notifications|Getting-Started-Guide#using-push-notifications-with-the-ews-java-api]]
   * [[Subscribe to push|Getting-Started-Guide#beginsubscribetopushnotifications]]
 * [[Tasks|Getting-Started-Guide#task]]
-* [[Common Issues]|Common-Issues]
+* [[Common Issues|Getting-Started-Guide#common-issues]]
 
 ___
 
