@@ -758,7 +758,7 @@ appointment.setSubject("Status Meeting");
 appointment.setBody(new MessageBody("The purpose of this meeting is to discuss status.");
 appointment.setStart(startDate);
 appointment.setEnd(endDate);
-appointment.setLocation(“Conf Room");
+appointment.setLocation(“Conf Room“);
 appointment.getRequiredAttendees().add("user1@contoso.com");
 appointment.getRequiredAttendees().add("user2@contoso.com");
 appointment.getOptionalAttendees().add("user3@contoso.com");
