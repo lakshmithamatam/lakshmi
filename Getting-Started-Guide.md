@@ -342,6 +342,7 @@ public void findAppointments(CalendarFolder folder, Date startDate, Date endDate
 	CalendarFolder cf=CalendarFolder.bind(service, WellKnownFolderName.Calendar);
 	FindItemsResults<Appointment> findResults = cf.findAppointments(new CalendarView(startDate, endDate));
 	for (Appointment appt : findResults.getItems()) {
+		appt.load(PropertySet.FirstClassProperties);
 		System.out.println("SUBJECT====="+appt.getSubject());
 		System.out.println("BODY========"+appt.getBody());
 	}
