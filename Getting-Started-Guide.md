@@ -1172,4 +1172,4 @@ System.out.println(change.getCount());
 ## Common Issues
 1. Exception "PKIX path building failed” and “unable to find valid certification path to requested target"
 This is a common error faced by many developer. The error and the resolution is documented well at [Stackoverflow] (http://stackoverflow.com/questions/21076179/pkix-path-building-failed-and-unable-to-find-valid-certification-path-to-requ)
-2. JavaMail Exchange Authentication. how to solve it at [Stackoverflow](https://stackoverflow.com/questions/1713116/javamail-exchange-authentication/41529188#41529188)
+2. JavaMail Exchange Authentication. how to solve it at Stackoverflow(https://stackoverflow.com/questions/1713116/javamail-exchange-authentication/41529188#41529188)
