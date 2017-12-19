@@ -68,6 +68,7 @@ For testing the application with HTTPS, you don't have to add any additional cod
 
 ## Accessing EWS by using the EWS JAVA API
 To access Exchange Web Services (EWS) by using the EWS JAVA API, all you need is an instance of the ExchangeService class, as shown in the following example.
+**Note:**  The `ExchangeService` class is by no means thread-safe. So you'll have to use one instance per thread.
 ```Java
 ExchangeService service = new ExchangeService(ExchangeVersion.Exchange2010_SP2);
 ExchangeCredentials credentials = new WebCredentials("emailAddress", "password");
@@ -121,6 +122,7 @@ Now
 service.autodiscoverUrl("<your_email_address>", new RedirectionUrlCallback());
 ```
 can be called to deal with the redirection in a safe manner.
+
 
 ## Items
 
