@@ -161,12 +161,12 @@ If you do not know what type of item the unique identifier maps to, you can also
 // Bind to an existing item using its unique identifier.
 Item item = Item.bind(service, new ItemId(uniqueId));
 
-if (item.equals(message)) {
+if (item instanceof EmailMessage) {
 	// If the item is an e-mail message, write the sender's name.
-	System.out.println((item(EmailMessage)).getSender().getName());
-} else if (item.equals(Appointment)) {
+	System.out.println(((EmailMessage)item).getSender().getName());
+} else if (item instanceof Appointment) {
 	// If the item is an appointment, write its start time.
-	System.out.println((item(Appointment).Start));
+	System.out.println(((Appointment)item).getStart()));
 } else {
 	// Handle other types.
 }
